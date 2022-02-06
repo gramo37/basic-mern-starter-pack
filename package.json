@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "concurrently \"cd backend && npm i\" \"cd frontend && npm i\"",
     "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run start\""
   },
   "author": "gramo",
